@@ -40,16 +40,89 @@
             <h1>Cadastro:</h1>
         <div class="box-cadastro">              
             <form>
-                <label for="fname">Nome:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <br>
-                <label for="lname">Sobrenome:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <br>
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" name="telefone">
+                <section class="form1">
+                    <label for="fname">Username</label><br>
+                    <input  class="inputtext"type="text" id="username" name="username" placeholder="Defina aqui o nome de seu usuário" required><br>
+                    <br>
+                    <label for="telefone">Telefone:</label><br>
+                    <input class="inputtext"type="tel" id="telefone" name="telefone" placeholder="(xx) xx-xxxxx-xxxx"required>
+                    <br>
+                    <input type="checkbox" id="recebeTelefone" name="recebeTelefone" checked>
+                    <label class="label2form" for="recebeTelefone">Desejo receber mensagens em meu WhatsApp</label><br>
+                    <br>
+                    <label for="telefone">E-mail:</label><br>
+                    <input  class="inputtext" type="email" id="email" name="email" placeholder="xxxx@xxxx"required>
+                    <br>
+                    <input type="checkbox" id="recebeEmail" name="recebeEmail" checked>
+                    <label class="label2form" for="recebeEmail">Desejo receber notificações da CDSTORE em meu e-mail</label><br>
+                    <br>
+                    <hr>
+                    <br>
+                <section class="form2">
+                    <input type="radio" id="masculino" name="sexo" value="M">
+                    <label class="label2form" for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="sexo" value="F">
+                    <label class="label2form" for="feminino">Feminino</label><br>
+                    <input type="radio" id="outro" name="sexo" value="O" checked>
+                    <label class="label2form" for="outro">Outro</label>
+                    <div class="conteudoFormulario ">
+                    <br>
+                        <label><b>Estado:</b></label><br>
+                        <select name="UF" size=1>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                </section>
+                    <section class="form3">
+                        <label for="fname">Cidade</label><br>
+                        <input  class="inputtext"type="text" id="cidade" name="cidade" placeholder="Insira sua cidade aqui" required><br>
+                        <br>
+                        <label for="fname">CEP</label><br>
+                        <input  class="inputtext"type="text" id="cep" name="cep" placeholder="xxxxx-xxx" required><br>
+                        <br>
+                        <label for="fname">Rua</label><br>
+                        <input  class="inputtext"type="text" id="rua" name="rua" placeholder="Insira sua rua aqui" required><br>
+                        <br>
+                        <label for="fname">Nro</label><br>
+                        <input  class="inputtext"type="number" id="endereco" name="endereco" placeholder="Número do endereço" required><br>
+                        <br>
+                    </section>
+                </section>
             </form>
         </div>
+        <section class="botaoEnviar">
+            <button class="oBotaoEnviar" type="button">Enviar</button>
+        </section>
         </div>
         </div>    
     <footer>
